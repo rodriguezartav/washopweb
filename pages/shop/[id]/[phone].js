@@ -94,6 +94,8 @@ export default function Home(props) {
     setCart(null);
   };
 
+  if (!shop || !cart) return null;
+
   return (
     <Layout>
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
