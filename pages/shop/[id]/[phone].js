@@ -40,13 +40,10 @@ export default function Home(props) {
 
   React.useEffect(() => {
     if (id) {
-      loadShop()
-        .then(() => {
-          return loadCart();
-        })
-        .then(() => {
-          return loadProduct();
-        });
+      loadCart();
+      loadShop().then(() => {
+        return loadProduct();
+      });
     }
   }, [id]);
 

@@ -206,12 +206,14 @@ export default function Sidebar(props) {
                       <button
                         onClick={() => {
                           onSave();
-                          window.location.href = `https://wa.me/${formCart.phone.replace(
-                            "whatsapp:+506",
-                            ""
-                          )}?text=En%20este%20link%20se%20puede%20ver%20el%20pedido%20http://washop.fi/${
-                            props.shop.id
-                          }/${formCart.phone.replace("whatsapp:+506", "")}`;
+                          window.open(
+                            `https://wa.me/${formCart.phone.replace(
+                              "whatsapp:+506",
+                              ""
+                            )}?text=En%20este%20link%20se%20puede%20ver%20el%20pedido%20http://washop.fi/${
+                              props.shop.id
+                            }/${formCart.phone.replace("whatsapp:+506", "")}`
+                          );
                         }}
                         type="button"
                         className="py-2 px-4 border border-gray-300 bg-green-500 rounded-md text-sm leading-5 font-medium text-gray-50 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out"
