@@ -85,6 +85,7 @@ export default function Home(props) {
 
       setProduct(null);
       setCart(cart);
+      updateCart(cart);
     };
   };
 

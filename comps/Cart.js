@@ -85,7 +85,7 @@ export default function Sidebar(props) {
                           <button
                             onClick={props.onOpen}
                             aria-label="Close panel"
-                            className="text-indigo-200 hover:text-white transition ease-in-out duration-150"
+                            className="text-gray-50 hover:text-white transition ease-in-out duration-150"
                           >
                             <svg
                               className="h-6 w-6"
