@@ -32,12 +32,14 @@ export default function Home(props) {
 
   React.useEffect(() => {
     if (shopState.data) setShop(shopState.data);
-  }, [shopState.data]);
+  }, [shopState]);
 
   React.useEffect(() => {
-    alert(JSON.stringify(cartState.data));
-    if (cartState.data) setCart({ ...cartState.data });
-  }, [cartState.data]);
+    if (cartState.data) {
+      setCart({ ...cartState.data });
+      alert(JSON.stringify(cartState.data));
+    }
+  }, [cartState]);
 
   React.useEffect(() => {
     if (id && phone) {
