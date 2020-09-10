@@ -37,7 +37,6 @@ export default function Home(props) {
   React.useEffect(() => {
     if (cartState.data) {
       setCart({ ...cartState.data });
-      alert(JSON.stringify(cartState.data));
     }
   }, [cartState]);
 
