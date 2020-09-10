@@ -53,7 +53,7 @@ export default function MyApp(props) {
       </Head>
 
       <Header />
-      {props.children}
+      <div style={{ maxWidth: 400 }}>{props.children}</div>
       <Footer />
     </React.Fragment>
   );
