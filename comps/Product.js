@@ -104,7 +104,7 @@ export default function Sidebar(props) {
                       </div>
                     </header>
 
-                    <div className="p-4">
+                    <div className="p-3">
                       <div className="sm:col-span-3">
                         <label
                           htmlFor="last_name"
