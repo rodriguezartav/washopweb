@@ -115,7 +115,10 @@ export default function Sidebar(props) {
                       {formCart &&
                         formCart.lines.items.map((item) => {
                           return (
-                            <li className="col-span-1 bg-white rounded-lg shadow">
+                            <li
+                              key={item.producto_id}
+                              className="col-span-1 bg-white rounded-lg shadow"
+                            >
                               <div className="w-full flex items-center justify-between p-3 space-x-6">
                                 <div className="flex-grow">
                                   <div className="flex items-center space-x-3">

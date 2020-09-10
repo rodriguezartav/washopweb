@@ -152,6 +152,7 @@ Leaving: "ease-in duration-200"
               {carts.map((item) => {
                 return (
                   <li
+                    key={item.id}
                     onClick={props.onSelectCart(item)}
                     className="col-span-1 bg-white rounded-lg shadow"
                   >

@@ -31,6 +31,7 @@ export default function List(props) {
         {products.map((item) => {
           return (
             <li
+              key={item.id}
               onClick={props.onSelect(item)}
               className="col-span-1 bg-white rounded-lg shadow"
             >
