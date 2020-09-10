@@ -1,6 +1,6 @@
 import React from "react";
 import { Transition } from "@tailwindui/react";
-import { useMutation } from "../../data/Api";
+import { useMutation } from "data/Api";
 import Photo from "./Photo";
 
 export default function Sidebar(props) {

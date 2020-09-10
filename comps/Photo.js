@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useUpload } from "../../data/Api";
+import { useUpload } from "data/Api";
 
 export default function PhotoFileUpload(props) {
   const { url } = props;
