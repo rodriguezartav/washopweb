@@ -28,10 +28,13 @@ export default function Sidebar(props) {
     setImage(url);
   };
 
-  const onSend = () => {
+  const onSend = async () => {
     const p = { name, price, image, shop_id: props.shop.id };
     if (props.product && props.product.id) p.id = props.product.id;
-    mutate(p);
+    await mutate(p);
+    setName("");
+    setPrice("");
+    setImage("");
   };
 
   return (
