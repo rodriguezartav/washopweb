@@ -95,7 +95,7 @@ export default function Home(props) {
   };
 
   const updateCart = async (_cart) => {
-    await mutate({ ...cart });
+    await mutate({ ..._cart });
   };
 
   return (
