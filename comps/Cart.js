@@ -49,7 +49,7 @@ export default function Sidebar(props) {
       }`}
     >
       <div className="absolute inset-0 overflow-hidden">
-        <section className="absolute inset-y-0 pl-14 max-w-full right-0 flex">
+        <section className="absolute inset-y-0 pl-10 max-w-full right-0 flex">
           {/*
   Slide-over panel, show/hide based on slide-over state.
 
@@ -105,7 +105,7 @@ export default function Sidebar(props) {
                       </div>
                       <div>
                         <input
-                          placeholder="Nombre del Cliente"
+                          placeholder="Cedula de Facturación"
                           className="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                         />
                       </div>

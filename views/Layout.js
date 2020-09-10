@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function MyApp(props) {
+export default function Layout(props) {
   return (
     <React.Fragment>
       <Head>
@@ -49,7 +49,7 @@ export default function MyApp(props) {
         {props.image && <meta property="og:image" content={props.image} />}
       </Head>
 
-      <Header />
+      <Header onCartClick={props.onCartClick} />
       <div style={{ maxWidth: 400 }}>{props.children}</div>
       <Footer />
     </React.Fragment>

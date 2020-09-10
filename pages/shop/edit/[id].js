@@ -71,6 +71,8 @@ export default function Home(props) {
 
   const onSelectCart = (cart) => {
     return () => {
+      if (!product.id) return setCart(cart); //hack
+
       const checkItems = cart.lines.items.filter(
         (item) => item.product_id == product.id
       );
@@ -98,8 +100,12 @@ export default function Home(props) {
     await mutate({ ..._cart });
   };
 
+  const onCartClick = () => {
+    setProduct({});
+  };
+
   return (
-    <Layout>
+    <Layout onCartClick={onCartClick}>
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
         <div className="mt-3 mx-3">
           <h2 className="text-gray-500 text-lg font-medium uppercase tracking-wide">
@@ -145,14 +151,6 @@ export default function Home(props) {
               setProduct(null);
             }}
             product={isAdmin && product}
-            onSelectCart={onSelectCart}
-          />
-          <CartCreator
-            shop={props.shop}
-            onOpen={() => {
-              setProduct(null);
-            }}
-            product={!isAdmin && product}
             onSelectCart={onSelectCart}
           />
         </div>

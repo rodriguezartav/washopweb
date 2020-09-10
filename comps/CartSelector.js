@@ -90,19 +90,21 @@ Leaving: "ease-in duration-200"
           </div>
 
           <div>
-            <div className="mt-3 text-center sm:mt-5">
-              <div className="mt-2">
-                <p className="text-sm leading-5 text-gray-500">
-                  Agregar Producto al pedido
-                </p>
-                <h3
-                  className="text-lg leading-6 font-medium text-gray-900"
-                  id="modal-headline"
-                >
-                  {props.product.name}
-                </h3>
+            {props.product.id && (
+              <div className="mt-3 text-center sm:mt-5">
+                <div className="mt-2">
+                  <p className="text-sm leading-5 text-gray-500">
+                    Agregar Producto al pedido
+                  </p>
+                  <h3
+                    className="text-lg leading-6 font-medium text-gray-900"
+                    id="modal-headline"
+                  >
+                    {props.product.name}
+                  </h3>
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="sm:col-span-3">
               <label
