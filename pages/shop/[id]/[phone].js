@@ -36,11 +36,11 @@ export default function Home(props) {
 
   React.useEffect(() => {
     alert(JSON.stringify(cartState.data));
-    if (cartState.data) setCart(cartState.data);
+    if (cartState.data) setCart({ ...cartState.data });
   }, [cartState.data]);
 
   React.useEffect(() => {
-    if (id) {
+    if (id && phone) {
       loadCart();
       loadShop().then(() => {
         return loadProduct();
