@@ -3,62 +3,57 @@ import { useRouter } from "next/router";
 import { useMutation, query, useFetch } from "data/Api";
 
 import List from "../List";
-import Cart from "../Cart";
+import Cart from "../UserCart";
 import Product from "../Product";
-import CartSelector from "../CartSelector";
+import UserPay from "../UserPay";
+
+import UserCart from "../UserCart";
 import CartCreator from "../CartCreator";
 
 import Layout from "views/Layout";
 
-export async function getStaticPaths() {
-  let response = await query("shop");
-
-  let shops = response.data;
-  return {
-    paths: shops.map((shop) => {
-      return { params: { id: shop.id + "" } };
-    }),
-    fallback: false, // See the "fallback" section below
-  };
-}
-
-export async function getStaticProps({ params }) {
-  // Call an external API endpoint to get posts
-
-  let shop = await query("shop/" + params.id);
-  let products = await query("product/shop/" + params.id);
-
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      shop: shop.data,
-      products: products.data,
-    },
-  };
-}
-
 export default function Home(props) {
   const router = useRouter();
 
-  const { token } = router.query;
+  const { id, phone } = router.query;
 
   const [mutate, state] = useMutation("cart/update");
 
   const [openProduct, setOpenProduct] = React.useState(false);
   const [cart, setCart] = React.useState();
+  const [shop, setShop] = React.useState({});
   const [product, setProduct] = React.useState();
   const [version, setVersion] = React.useState(0);
   const [isAdmin, setIsAdmin] = React.useState(false);
-  const [response] = useFetch("shop/token/" + token);
+  const [view, setView] = React.useState("CART");
+  const [loadShop, shopState] = useMutation("shop/" + id);
+  const [loadCart, cartState] = useMutation("cart/phone/" + phone);
+  const [loadProduct, productState] = useMutation("product/shop/" + id);
 
   React.useEffect(() => {
-    if (response) setIsAdmin(true);
-  }, [response]);
+    if (shopState.data) setShop(shopState.data);
+  }, [shopState.data]);
+
+  React.useEffect(() => {
+    if (cartState.data) setCart(cartState.data);
+  }, [cartState.data]);
+
+  React.useEffect(() => {
+    if (id) {
+      loadShop()
+        .then(() => {
+          return loadCart();
+        })
+        .then(() => {
+          return loadProduct();
+        });
+    }
+  }, [id]);
 
   const onSelectItem = (item) => {
     return () => {
       setProduct(item);
+      onAddToCart(cart, item);
     };
   };
 
@@ -72,21 +67,25 @@ export default function Home(props) {
 
   const onSelectCart = (cart) => {
     return () => {
-      const checkItems = cart.lines.items.filter(
-        (item) => item.product_id == product.id
-      );
-      if (checkItems.length == 0)
-        cart.lines.items.push({
-          name: product.name,
-          product_id: product.id,
-          price: product.price,
-          amount: 1,
-          image: product.image,
-        });
-
-      setProduct(null);
-      setCart(cart);
+      onAddToCart(cart);
     };
+  };
+
+  const onAddToCart = (cart, product) => {
+    const checkItems = cart.lines.items.filter(
+      (item) => item.product_id == product.id
+    );
+    if (checkItems.length == 0)
+      cart.lines.items.push({
+        name: product.name,
+        product_id: product.id,
+        price: product.price,
+        amount: 1,
+        image: product.image,
+      });
+
+    setProduct(null);
+    setCart(cart);
   };
 
   const productUpdated = () => {
@@ -104,58 +103,43 @@ export default function Home(props) {
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
         <div className="mt-3 mx-3">
           <h2 className="text-gray-500 text-lg font-medium uppercase tracking-wide">
-            {props.shop.title || props.shop.tax_id}
+            {shop.title || shop.tax_id}
           </h2>
-          <p className="text-gray-400 text-xs font-medium ">
-            Lista de Productos
-          </p>
+          <p className="text-gray-400 text-xs font-medium ">Pedido Pendiente</p>
         </div>
 
         <div className="mx-4">
-          <List
-            isAdmin={isAdmin}
-            products={props.products}
-            shop={props.shop}
-            onSelect={onSelectItem}
-            onCreate={onCreate}
-            onOpen={onOpenProduct}
-            version={version}
-          ></List>
-          <Product
-            isAdmin={isAdmin}
-            shop={props.shop}
-            onProductUpdated={productUpdated}
-            onOpen={onOpenProduct}
-            open={openProduct}
-          />
-          <Cart
-            isAdmin={isAdmin}
-            shop={props.shop}
-            onOpen={() => {
-              setCart(null);
-            }}
-            updateCart={(_cart) => {
-              setCart(_cart);
-            }}
-            onSave={updateCart}
-            cart={cart}
-          />
-          <CartSelector
-            shop={props.shop}
-            onOpen={() => {
-              setProduct(null);
-            }}
-            product={isAdmin && product}
-            onSelectCart={onSelectCart}
-          />
-          <CartCreator
-            shop={props.shop}
-            onOpen={() => {
-              setProduct(null);
-            }}
-            product={!isAdmin && product}
-            onSelectCart={onSelectCart}
-          />
+          {view == "CART" && (
+            <UserCart
+              onPay={() => {
+                setView("PAY");
+              }}
+              isAdmin={isAdmin}
+              shop={shop}
+              onOpen={() => {
+                setCart(null);
+              }}
+              updateCart={(_cart) => {
+                setCart(_cart);
+              }}
+              onSave={updateCart}
+              cart={cart}
+            />
+          )}
+          {view == "PAY" && (
+            <UserPay
+              isAdmin={isAdmin}
+              shop={shop}
+              onOpen={() => {
+                setCart(null);
+              }}
+              updateCart={(_cart) => {
+                setCart(_cart);
+              }}
+              onSave={updateCart}
+              cart={cart}
+            />
+          )}
         </div>
       </div>
     </Layout>

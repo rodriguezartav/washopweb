@@ -157,11 +157,14 @@ Leaving: "ease-in duration-200"
                       <div className="flex-1 truncate">
                         <div className="flex items-center space-x-3">
                           <span className="flex-shrink-0 inline-block px-2 py-0.5 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-                            {parseInt(item.total * 100) / 100} CRC
+                            (PRONTO) CRC
                           </span>
                         </div>
                         <h3 className="text-gray-900 mt-2 uppercase text-sm leading-5 font-medium truncate">
-                          {item.phone.replace("whatsapp:+506", "")}
+                          {item.phone
+                            .replace("whatsapp:+506", "")
+                            .substring(0, 4)}
+                          -{item.phone.substr(-4)}
                         </h3>
                       </div>
                     </div>

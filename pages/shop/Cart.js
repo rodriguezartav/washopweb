@@ -77,7 +77,7 @@ export default function Sidebar(props) {
                     <header className="space-y-1 py-6 px-4 bg-indigo-800 sm:px-6">
                       <div className="flex items-center justify-between space-x-3">
                         <h2 className="text-lg leading-7 font-medium text-white">
-                          Pedido
+                          Pedido{" "}
                           {formCart &&
                             formCart.phone.replace("whatsapp:+506", "")}
                         </h2>
@@ -198,7 +198,7 @@ export default function Sidebar(props) {
                   <div className=""></div>
                   <div className="flex-shrink-0 px-4 py-4 space-x-4 flex justify-start">
                     <a className="text-sm text-green-700 pt-2">
-                      washop.fi/{props.shop.id}/
+                      washop.fi/shop/{props.shop.id}/
                       {formCart.phone.replace("whatsapp:+506", "")}
                     </a>
 
