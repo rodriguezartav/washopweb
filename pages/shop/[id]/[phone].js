@@ -2,13 +2,13 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useMutation, query, useFetch } from "data/Api";
 
-import List from "../List";
-import Cart from "../UserCart";
-import Product from "../Product";
-import UserPay from "../UserPay";
+import List from "comps/List";
+import Cart from "comps/UserCart";
+import Product from "comps/Product";
+import UserPay from "comps/UserPay";
 
-import UserCart from "../UserCart";
-import CartCreator from "../CartCreator";
+import UserCart from "comps/UserCart";
+import CartCreator from "comps/CartCreator";
 
 import Layout from "views/Layout";
 

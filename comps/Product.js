@@ -54,7 +54,7 @@ export default function Sidebar(props) {
 */}
 
           <Transition
-            show={props.open}
+            show={props.open || false}
             enter="transform transition ease-in-out duration-500 sm:duration-700"
             enterFrom="translate-x-full"
             enterTo="translate-x-0"
