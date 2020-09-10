@@ -42,9 +42,7 @@ export default function Home(props) {
   React.useEffect(() => {
     if (id && phone) {
       loadCart();
-      loadShop().then(() => {
-        return loadProduct();
-      });
+      loadShop();
     }
   }, [id]);
 
