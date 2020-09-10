@@ -26,14 +26,12 @@ export async function getStaticProps({ params }) {
   // Call an external API endpoint to get posts
 
   let shop = await query("shop/" + params.id);
-  let products = await query("product/shop/" + params.id);
 
   // By returning { props: posts }, the Blog component
   // will receive `posts` as a prop at build time
   return {
     props: {
       shop: shop.data,
-      products: products.data,
     },
   };
 }
@@ -51,6 +49,7 @@ export default function Home(props) {
   const [version, setVersion] = React.useState(0);
   const [isAdmin, setIsAdmin] = React.useState(false);
   const [response] = useFetch("shop/token/" + token);
+  const [productsResponse] = useFetch("product/shop/" + props.shop.id);
 
   React.useEffect(() => {
     if (response) setIsAdmin(true);
@@ -113,7 +112,7 @@ export default function Home(props) {
         <div className="mx-4">
           <List
             isAdmin={isAdmin}
-            products={props.products}
+            products={productsResponse}
             shop={props.shop}
             onSelect={onSelectItem}
             onCreate={onCreate}
