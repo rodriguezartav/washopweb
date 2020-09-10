@@ -1,36 +1,22 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useMutation, query, useFetch } from "data/Api";
 
-import Wrapper from "../components/Wrapper";
-
-import LeftNav from "../components/nav/Left";
-
-import Blog from "../components/grid/Cards";
-
-import Link from "next/link";
-import Layout from "../views/Layout";
-
-import { MENU, PAGE, STATIC_PAGES, POSTS, query } from "data/Contentful";
-
-export async function getStaticProps({ params }) {
-  return {
-    props: {
-      posts: [],
-      sections: [],
-      page: {},
-      menu: {},
-    },
-  };
-}
+import Layout from "views/Layout";
 
 export default function Home(props) {
   const router = useRouter();
 
-  const [showRegister, setShowRegister] = React.useState(false);
-
   return (
     <Layout>
-      <div className="container mx-auto my-14"></div>
+      <div className="bg-white shadow overflow-hidden sm:rounded-md">
+        <div className="mt-3 mx-3">
+          <h2 className="text-gray-500 text-lg font-medium uppercase tracking-wide">
+            Hola
+          </h2>
+          <p className="text-gray-400 text-xs font-medium ">Pedido Pendiente</p>
+        </div>
+      </div>
     </Layout>
   );
 }
