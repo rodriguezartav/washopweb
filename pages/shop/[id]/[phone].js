@@ -105,7 +105,7 @@ export default function Home(props) {
         </div>
 
         <div className="mx-4">
-          {view == "CART" && (
+          {view == "CART" && cart && (
             <UserCart
               onPay={() => {
                 setView("PAY");
