@@ -7,15 +7,12 @@ export default function Layout(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Laboratorio de Emprendedurismo Social y Tecnológico</title>
+        <title>waShop.fi</title>
 
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content={
-            props.text ||
-            "El centro de desarrollo de prototipos del inventor Roberto Rodríguez para la solución de los problemas humanos a través de innovaciones organizacionales y tecnológicas."
-          }
+          content={props.text || "Venda en linea con WhatsApp"}
         />
 
         <meta
@@ -23,30 +20,23 @@ export default function Layout(props) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
 
-        <meta
-          property="og:site_name"
-          content="RodriguezLab.co"
-          key="ogsitename"
-        />
+        <meta property="og:site_name" content="waShop.fi" key="ogsitename" />
         <meta
           property="og:title"
           content={
             props.title
-              ? `RodriguezLab: ${props.title}`
-              : "Laboratorio de Emprendedurismo Social y Tecnológico"
+              ? `waShop.fi: ${props.title}`
+              : "waShop - Tienda Whatsapp"
           }
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content={
-            props.text ||
-            "El centro de desarrollo de prototipos del inventor Roberto Rodríguez para la solución de los problemas humanos a través de innovaciones organizacionales y tecnológicas."
-          }
+          content={props.text || "Venda en linea con WhatsApp"}
           key="ogdesc"
         />
 
-        {props.image && <meta property="og:image" content={props.image} />}
+        <meta property="og:image" content="/logo3.png" />
       </Head>
 
       <Header onCartClick={props.onCartClick} />
