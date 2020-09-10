@@ -111,7 +111,7 @@ export default function Sidebar(props) {
                       </div>
                     </header>
 
-                    <ul className="grid p-3 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className=" ">
                       {formCart &&
                         formCart.lines.items.map((item) => {
                           return (

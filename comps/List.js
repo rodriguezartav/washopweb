@@ -27,13 +27,13 @@ export default function List(props) {
         </span>
       )}
 
-      <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="">
         {products.map((item) => {
           return (
             <li
               key={item.id}
               onClick={props.onSelect(item)}
-              className="col-span-1 bg-white rounded-lg shadow"
+              className="mb-5 bg-white rounded-lg shadow"
             >
               <div className="w-full flex items-center justify-between p-3 space-x-6">
                 <div className="flex-1 truncate">
