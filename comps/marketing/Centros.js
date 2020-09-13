@@ -9,27 +9,37 @@ export default function Centros() {
             <h2 className="text-4xl  text-center leading-9 font-extrabold text-blue-50 tracking-tight sm:text-5xl">
               Centros Comerciales en Internet
             </h2>
-            <p className="text-xl max-w-2xl mx-auto text-center leading-8 text-gray-50">
+            <p className="text-xl max-w-3xl mx-auto text-center leading-8 text-gray-50">
               Aparte de ayudarle en Whatsapp, los <strong>WaBots</strong>{" "}
-              construyen tiendas web con sus productos para que los clientes
-              pueden buscarlos y comprarlos
+              construyen automaticamente tiendas web con sus productos para que
+              los clientes pueden buscarlos y comprarlos
             </p>
           </div>
         </div>
+
+        <img src="/yoga.png" className="mt-10 rounded-lg" />
       </div>
 
       <div className="bg-indigo-50 py-6">
         <div className="relative text-center max-w-lg mx-auto lg:max-w-7xl">
           <div>
-            <p className="mt-3 max-w-4xl text-center mx-auto text-xl leading-7  text-gray-700 sm:mt-4">
-              Estas organizaciones cuentan con centros comercial a los que usted
-              puede unirse.
+            <h2 className="text-3xl  text-center leading-9 font-extrabold text-blue-800  mt-10 tracking-tight sm:text-4xl">
+              Abra una tienda en los mejores centros comerciales
+            </h2>
+
+            <p className="mt-3 max-w-4xl text-center mx-auto text-2xl leading-8  text-gray-900 sm:mt-5">
+              Aumente sus ventas y la confianza de sus clientes
               <br />
-              Unase y vea como aumentan sus ventas y la confianza de sus
-              clientes al comprar via Web o WhatsApp.
+              Los centros comerciales son privados con beneficios que valen la
+              pena
             </p>
 
-            <ul className="grid  mt-16 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <p className="mt-10 max-w-4xl text-center mx-auto text-xl leading-7  text-gray-700 sm:mt-20">
+              Estas organizaciones cuentan con centros comercial a los que usted
+              puede unirse.
+            </p>
+
+            <ul className="grid  mt-5 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <li className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow">
                 <div className="flex-1 flex flex-col p-8">
                   <img

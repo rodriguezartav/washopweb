@@ -3,6 +3,22 @@ import React from "react";
 export default function cta() {
   return (
     <div className="bg-white">
+      <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+        <div className="text-center">
+          <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+            Wakket tiene todo
+            <br />{" "}
+            <span className="text-blue-600">para vender desde su celular</span>
+          </h2>
+          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            Diseñado para Costa Rica, nuestras leyes, nuestro mercado y nuestra
+            gente
+            <br />
+            Pruebelo gratis y vera como ayuda a vender!
+          </p>
+        </div>
+      </main>
+
       <div className="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
         <div className="px-6 py-6 bg-blue-700 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">
