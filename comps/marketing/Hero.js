@@ -68,17 +68,7 @@ export default function Hero() {
                 "linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%)",
             }}
           ></div>
-          <div
-            className="bg-red-500"
-            style={{
-              width: "100%",
-              height: 300,
-              position: "absolute",
-              opacity: 0.3,
-              bottom: 0,
-              right: 0,
-            }}
-          ></div>
+
           <div
             className="bg-indigo-500"
             style={{
