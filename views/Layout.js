@@ -26,17 +26,19 @@ export default function Layout(props) {
           content={
             props.title
               ? `wakket.com: ${props.title}`
-              : "wakket - Tienda en línea y Mercado de WhatApp"
+              : "Tienda en línea y Mercado de WhatsApp"
           }
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content={props.text || "Venda en linea con WhatsApp"}
+          content={
+            "Venda en línea atravez de whatsapp. Wakket esta hecho para vender desde su teléfono celular sin tener que aprender nada nuevo."
+          }
           key="ogdesc"
         />
 
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="http://wakket.com/hero3.png" />
       </Head>
 
       <Header onCartClick={props.onCartClick} />
