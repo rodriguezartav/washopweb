@@ -25,6 +25,7 @@ export default function Home(props) {
       <Cta />
       <Centros />
       <Publicidad />
+
       <Cta2 />
       <Faq />
       <Footer />

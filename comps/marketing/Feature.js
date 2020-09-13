@@ -47,19 +47,19 @@ export default function Feature() {
         </div>
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
-            <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+            <h4 className="text-2xl leading-8 font-extrabold text-blue-800 tracking-tight sm:text-3xl sm:leading-9">
               Porque necesito Wakket?
             </h4>
 
-            <p className="mt-4 text-xl leading-7 text-gray-700">
-              Tener exito en ventas es dificil cuando no estamos frente a frente
+            <p className="mt-4 border-b-2 pb-5 text-xl leading-7 text-blue-800">
+              Porque es mas dificil vender cuando no estamos frente a frente.
             </p>
 
             <ul className="mt-10">
               <li>
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-700 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -77,7 +77,7 @@ export default function Feature() {
                   </div>
                   <div className="ml-4">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                      Donde llevar el pedido?
+                      Donde guardar los pedidos?
                     </h5>
                     <p className="mt-2 text-base leading-6 text-gray-500">
                       Es dificil para vendedor y comprador tener claridad sobre
@@ -90,7 +90,7 @@ export default function Feature() {
               <li className="mt-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -121,7 +121,7 @@ export default function Feature() {
               <li className="mt-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -153,7 +153,7 @@ export default function Feature() {
               <li className="mt-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -258,18 +258,18 @@ export default function Feature() {
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
-              <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+              <h4 className="text-2xl leading-8 font-extrabold text-blue-800 tracking-tight sm:text-3xl sm:leading-9">
                 Como lo resuelve Wakket?
               </h4>
-              <p className="mt-3 text-lg leading-7 text-gray-500">
-                Todo se hace via nuestro WhatsApp, no tiene que aprender nada
-                nuevo.
+              <p className="mt-4 border-b-2 pb-5 text-xl leading-7 text-blue-800">
+                Todo se hace via nuestro WhatsApp. No hace falta aprender,
+                comprar, ni contratar - es genial!
               </p>
               <ul className="mt-10">
                 <li>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           fill="none"
@@ -287,7 +287,7 @@ export default function Feature() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg leading-6 font-medium text-gray-900">
-                        Como vender un producto?
+                        Catalogo de producto
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
                         Envie a nuestro whatsapp el precio y la *foto durante o
@@ -304,7 +304,7 @@ export default function Feature() {
                 <li className="mt-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           fill="none"
@@ -322,7 +322,7 @@ export default function Feature() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg leading-6 font-medium text-gray-900">
-                        Como tomarle un pedido a un cliente?
+                        Pedidos y Proformas
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
                         Envie a nuestro whatsapp el telefono del cliente, escoja
@@ -334,10 +334,10 @@ export default function Feature() {
                   </div>
                 </li>
 
-                <li className="mt-10">
+                <li className="mt-14">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           fill="none"
@@ -355,44 +355,29 @@ export default function Feature() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg leading-6 font-medium text-gray-900">
-                        Como paga el cliente?
+                        Pago Sinpe y Sinpe Móvil
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
-                        Por Sinpe y Sinpe Movil. Desde el enlace del pedido el
-                        cliente puede pagar y una vez se reciba el pago tanto
-                        usted como el cliente seran notificados - via WhatsApp.
+                        Desde el enlace del pedido el cliente puede pagar y una
+                        vez se reciba el pago tanto usted como el cliente seran
+                        notificados - via WhatsApp.
                       </p>
                     </div>
                   </div>
                 </li>
 
-                <li className="mt-10">
+                <li className="mt-16 p-4 bg-blue-100">
                   <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                        <svg
-                          className="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
+                    <div className="flex-shrink-0"></div>
                     <div className="ml-4">
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">
-                        Que son wa-Bots?
+                      <h5 className="text-lg leading-6 font-medium text-blue-700">
+                        Los WaBots
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
-                        Son pequeños programas que viven dentro de nuestro
-                        Whatsapp y lo ayudan en segundos con todo lo que
-                        necesita para vender por internet. Son el futuro.
+                        Son pequeños programas que viven dentro del Whatsapp de
+                        Wakket y lo ayudan en segundos con todo lo que necesita
+                        para vender por internet.{" "}
+                        <strong>Vienen del futuro!</strong>
                       </p>
                     </div>
                   </div>
@@ -442,16 +427,15 @@ export default function Feature() {
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <p className="text-base leading-6 text-blue-600 font-semibold tracking-wide uppercase">
-              Lo mas importante es la confianza
+              Ayudamos a que confien en su tienda
             </p>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-              Sellos de Garantía
+              Certificados de Confianza
             </h3>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-              El objetivo de Wakket es facilitar el comercio celular y para esto
-              tomamos la tarea de revisar y verificar todas nuestras cuentas -{" "}
-              <strong>ademas</strong> todos podemos ayudarnos mediante
-              evaluaciones y puntaciones.
+              Para vender sin estar frente a frente la confianza lo es todo.
+              Wakket se encarga de revisar, verificar y certificar todas
+              nuestras cuentas.
             </p>
           </div>
           <div className="mt-10">
@@ -459,7 +443,7 @@ export default function Feature() {
               <li>
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -490,7 +474,7 @@ export default function Feature() {
               <li className="mt-10 md:mt-0">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -522,7 +506,7 @@ export default function Feature() {
               <li className="mt-10 md:mt-0">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -555,7 +539,7 @@ export default function Feature() {
               <li className="mt-10 md:mt-0">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         fill="none"
@@ -588,7 +572,7 @@ export default function Feature() {
             <div className="max-w-screen-xl mt-18 mx-auto px-4 sm:px-6 lg:px-8">
               <div className="lg:text-center">
                 <p className=" text-lg mt-20 leading-6 text-blue-600 font-semibold tracking-wide uppercase">
-                  Las cuentas obtienen una calificación de confianza del 1 al 5
+                  Las cuentas obtienen un certificado de confianza
                 </p>
                 <p className=" text-base mt-1 leading-6 text-gray-500  font-semibold tracking-wide uppercase">
                   Los clientes pueden ver cada punto en detalle

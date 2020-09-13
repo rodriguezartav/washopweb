@@ -7,11 +7,12 @@ export default function Centros() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-4xl  text-center leading-9 font-extrabold text-blue-50 tracking-tight sm:text-5xl">
-              Centros Comerciales Mobiles
+              Centros Comerciales en Internet
             </h2>
             <p className="text-xl max-w-2xl mx-auto text-center leading-8 text-gray-50">
-              Los WaBots construyen tiendas web con sus productos para que los
-              clientes pueden buscarlos y comprarlos en internet
+              Aparte de ayudarle en Whatsapp, los <strong>WaBots</strong>{" "}
+              construyen tiendas web con sus productos para que los clientes
+              pueden buscarlos y comprarlos
             </p>
           </div>
         </div>
@@ -25,7 +26,7 @@ export default function Centros() {
               puede unirse.
               <br />
               Unase y vea como aumentan sus ventas y la confianza de sus
-              clientes al comprar via WhatsApp.
+              clientes al comprar via Web o WhatsApp.
             </p>
 
             <ul className="grid  mt-16 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

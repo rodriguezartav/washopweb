@@ -51,7 +51,7 @@ export default function Logos() {
           </div>
           <div className="mt-10 sm:grid sm:grid-cols-2 sm:col-gap-8 sm:row-gap-10 lg:col-span-2 lg:mt-0">
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -79,7 +79,7 @@ export default function Logos() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -107,7 +107,7 @@ export default function Logos() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -134,7 +134,7 @@ export default function Logos() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                 <svg
                   className="h-6 w-6"
                   fill="none"

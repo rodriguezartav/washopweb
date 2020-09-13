@@ -3,8 +3,8 @@ import React from "react";
 export default function Logos() {
   return (
     <div className="bg-white">
-      <div className="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-        <div className="px-6 py-6 bg-indigo-800 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+      <div className="mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div className="px-6 py-6 bg-indigo-500 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">
             <h2 className="text-2xl leading-8 font-extrabold tracking-tight text-gray-50 sm:text-3xl sm:leading-9">
               Super Asistentes de Compra
