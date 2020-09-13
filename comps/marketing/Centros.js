@@ -49,7 +49,7 @@ export default function Centros() {
                     <dt className="sr-only">Role</dt>
                     <dd className="mt-3">
                       <span className="px-2 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-                        Admin
+                        pronto
                       </span>
                     </dd>
                   </dl>
@@ -74,7 +74,7 @@ export default function Centros() {
                     <dt className="sr-only">Role</dt>
                     <dd className="mt-3">
                       <span className="px-2 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-                        Admin
+                        pronto
                       </span>
                     </dd>
                   </dl>
@@ -99,7 +99,7 @@ export default function Centros() {
                     <dt className="sr-only">Role</dt>
                     <dd className="mt-3">
                       <span className="px-2 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-                        Admin
+                        pronto
                       </span>
                     </dd>
                   </dl>
@@ -124,7 +124,7 @@ export default function Centros() {
                     <dt className="sr-only">Role</dt>
                     <dd className="mt-3">
                       <span className="px-2 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-                        Admin
+                        pronto
                       </span>
                     </dd>
                   </dl>
