@@ -16,14 +16,14 @@ export default function Hero() {
               <span className="text-blue-700 text-5xl ">usando WhatsApp</span>
             </h2>
 
-            <p className="mt-3 max-w-md mx-auto text-lg text-gray-900 sm:text-2xl md:mt-5 md:max-w-3xl">
+            <p className="mt-3 max-w-md mx-auto text-md  text-gray-900 sm:text-2xl md:mt-5 md:max-w-3xl">
               Atienda, venda, cobre y envie desde su celular, <br />
               <span className="underline">
                 solo tiene que saber usar whatsapp
               </span>
             </p>
 
-            <p className="mt-12 max-w-md mx-auto text-lg text-gray-800 sm:text-lg  md:mt-48 md:max-w-3xl">
+            <p className="mt-12 max-w-md mx-auto text-md text-gray-800 sm:text-lg  md:mt-48 md:max-w-3xl">
               Pruebelo gratis y dese cuenta por usted mismo
             </p>
 
