@@ -27,14 +27,14 @@ export default function Centros() {
               Abra una tienda en los mejores centros comerciales
             </h2>
 
-            <p className="mt-3 max-w-4xl text-center mx-auto text-2xl leading-8  text-gray-900 sm:mt-5">
+            <p className="mt-3 sm:max-w-4xl mx-5 text-center sm:mx-auto text-2xl leading-8  text-gray-900 sm:mt-5">
               Aumente sus ventas y la confianza de sus clientes
               <br />
               Los centros comerciales son privados con beneficios que valen la
               pena
             </p>
 
-            <p className="mt-10 max-w-4xl text-center mx-auto text-xl leading-7  text-gray-700 sm:mt-20">
+            <p className="mt-10 sm:max-w-4xl text-center mx-5 sm:mx-auto text-xl leading-7  text-gray-700 sm:mt-20">
               Estas organizaciones cuentan con centros comercial a los que usted
               puede unirse.
             </p>
