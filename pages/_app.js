@@ -11,7 +11,7 @@ import Alerts from "../components/alert/Alerts";
 import "../styles/index.css";
 import Router from "next/router";
 
-//import * as gtag from "../data/Gtag";
+import * as gtag from "../data/Gtag";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -21,8 +21,8 @@ export default function MyApp(props) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      // gtag.pageview(url);
-      //ping({ url: url });
+      gtag.pageview(url);
+      ping({ url: url });
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
@@ -34,7 +34,7 @@ export default function MyApp(props) {
   return (
     <Provider>
       <Head>
-        <title>rodriguezlabs.co</title>
+        <title>The WhatsApp Market is wakket.com</title>
       </Head>
       <Component {...pageProps} />
 

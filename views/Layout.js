@@ -25,8 +25,8 @@ export default function Layout(props) {
           property="og:title"
           content={
             props.title
-              ? `waShop.fi: ${props.title}`
-              : "waShop - Tienda Whatsapp"
+              ? `wakket.com: ${props.title}`
+              : "wakket - Tienda en línea y Mercado de WhatApp"
           }
           key="ogtitle"
         />
@@ -36,7 +36,7 @@ export default function Layout(props) {
           key="ogdesc"
         />
 
-        <meta property="og:image" content="/logo3.png" />
+        <meta property="og:image" content="/logo.png" />
       </Head>
 
       <Header onCartClick={props.onCartClick} />
