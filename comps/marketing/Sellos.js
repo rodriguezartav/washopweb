@@ -4,7 +4,7 @@ export default function Sellos() {
   return (
     <div className="bg-white">
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="uppercase text-gray-500 text-xl grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+        <div className="uppercase text-gray-500 text-xl grid grid-cols-1 gap-8 md:grid-cols-6 lg:grid-cols-5">
           <div className="col-span-1 text-center text-green-50  bg-green-600 rounded-full p-5  justify-center md:col-span-2 lg:col-span-1">
             Garantizado!
             <br />
