@@ -38,7 +38,7 @@ export default function Layout(props) {
           key="ogdesc"
         />
 
-        <meta property="og:image" content="http://wakket.com/hero3.png" />
+        <meta property="og:image" content="http://wakket.com/hero3.jpg" />
       </Head>
 
       <Header onCartClick={props.onCartClick} />
