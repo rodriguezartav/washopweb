@@ -35,7 +35,7 @@ export default function form(props) {
           <div className="flex space-x-2">
             {/* Selected: "font-semibold", Not Selected: "font-normal" */}
             <span className="font-normal truncate">{item.name}</span>
-            {/* Highlighted: "text-indigo-200", Not Highlighted: "text-gray-500" */}
+            {/* Highlighted: "text-blue-200", Not Highlighted: "text-gray-500" */}
             <span className="text-gray-500 truncate">@wadecooper</span>
           </div>
 

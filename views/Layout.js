@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../comps/Footer";
+import Header from "../comps/Header";
 
 export default function Layout(props) {
   return (
@@ -40,7 +40,7 @@ export default function Layout(props) {
       </Head>
 
       <Header onCartClick={props.onCartClick} />
-      <div style={{ maxWidth: 400 }}>{props.children}</div>
+      {props.children}
       <Footer />
     </React.Fragment>
   );

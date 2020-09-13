@@ -69,7 +69,7 @@ export default function Sidebar(props) {
               <div ref={ref} className="w-screen max-w-md">
                 <div className="h-full divide-y divide-gray-200 flex flex-col bg-white shadow-xl">
                   <div className="flex-1 h-0 overflow-y-auto">
-                    <header className="space-y-1 py-6 px-4 bg-indigo-800 sm:px-6">
+                    <header className="space-y-1 py-6 px-4 bg-blue-800 sm:px-6">
                       <div className="flex items-center justify-between space-x-3">
                         <h2 className="text-lg leading-7 font-medium text-white">
                           Productos
@@ -174,7 +174,7 @@ export default function Sidebar(props) {
                         <button
                           onClick={onSend}
                           type="submit"
-                          className="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                          className="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out"
                         >
                           Guardar
                         </button>

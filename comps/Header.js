@@ -3,14 +3,14 @@ import React, { Component } from "react";
 export default class Header extends Component {
   render() {
     return (
-      <div className="relative bg-indigo-800">
+      <div className="relative bg-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
             <div className="lg:w-0 lg:flex-1">
-              <a href="#" className="flex">
+              <a href="#" className="flex flex-row items-center">
                 <img
-                  className="h-8 w-auto sm:h-10"
-                  src="/logo7.png"
+                  className="h-12  w-auto sm:h-14"
+                  src="/logo.png"
                   alt="Workflow"
                 />
               </a>
@@ -49,7 +49,7 @@ export default class Header extends Component {
                   <div>
                     <img
                       className="h-8 w-auto"
-                      src="/logo3.png"
+                      src="/logo.png"
                       alt="Workflow"
                     />
                   </div>
@@ -81,7 +81,7 @@ export default class Header extends Component {
                         href="#"
                         className="-m-3 space-x-4 flex items-center p-3 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white sm:h-12 sm:w-12">
                           <svg
                             className="h-6 w-6"
                             fill="none"
@@ -104,7 +104,7 @@ export default class Header extends Component {
                         href="#"
                         className="-m-3 space-x-4 flex items-center p-3 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white sm:h-12 sm:w-12">
                           <svg
                             className="h-6 w-6"
                             fill="none"
@@ -127,7 +127,7 @@ export default class Header extends Component {
                         href="#"
                         className="-m-3 space-x-4 flex items-center p-3 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white sm:h-12 sm:w-12">
                           <svg
                             className="h-6 w-6"
                             fill="none"
@@ -150,7 +150,7 @@ export default class Header extends Component {
                         href="#"
                         className="-m-3 space-x-4 flex items-center p-3 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white sm:h-12 sm:w-12">
                           <svg
                             className="h-6 w-6"
                             fill="none"
@@ -173,7 +173,7 @@ export default class Header extends Component {
                     <div className="text-base leading-6">
                       <a
                         href="#"
-                        className="font-medium text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+                        className="font-medium text-blue-600 hover:text-blue-500 transition ease-in-out duration-150"
                       >
                         View all products →
                       </a>
@@ -224,7 +224,7 @@ export default class Header extends Component {
                   <span className="w-full flex rounded-md shadow-sm">
                     <a
                       href="#"
-                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
                     >
                       Sign up
                     </a>
@@ -233,7 +233,7 @@ export default class Header extends Component {
                     Existing customer?
                     <a
                       href="#"
-                      className="text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+                      className="text-blue-600 hover:text-blue-500 transition ease-in-out duration-150"
                     >
                       Sign in
                     </a>
