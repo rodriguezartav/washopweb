@@ -7,7 +7,7 @@ export default class Header extends Component {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
             <div className="lg:w-0 lg:flex-1">
-              <a href="#" className="flex flex-row items-center">
+              <a href="/" className="flex flex-row items-center">
                 <img
                   className="h-12  w-auto sm:h-14"
                   src="/logo.png"
