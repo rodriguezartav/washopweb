@@ -22,10 +22,18 @@ export default function Home(props) {
       <Hero />
       <div className="w-full mx-auto my-10">
         <video
+          preload="yes"
+          playsinline
           controls="true"
           className="mx-auto max-w-xl2 w-10/12 object-cover"
-          src="https://d7cpe2rif0q4d.cloudfront.net/wakket_v1/mp4-wakket_v1.webm"
-        />
+        >
+          <source src="wakket_v1/hls-wakket_v1.mp4" type="video/mp4" />
+
+          <source
+            type="video/webm"
+            src="https://d7cpe2rif0q4d.cloudfront.net/wakket_v1/mp4-wakket_v1.webm"
+          />
+        </video>
       </div>
 
       <Feature />
