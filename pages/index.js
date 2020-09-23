@@ -24,7 +24,7 @@ export default function Home(props) {
         <video
           controls="true"
           className="mx-auto w-11/12 object-cover"
-          src="https://d7cpe2rif0q4d.cloudfront.net/wakket_v1/hls-wakket_v1.webm"
+          src="https://d7cpe2rif0q4d.cloudfront.net/wakket_v1/mp4-wakket_v1.webm"
         />
       </div>
 
