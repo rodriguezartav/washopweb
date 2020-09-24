@@ -27,7 +27,7 @@ export default function Home(props) {
           controls="true"
           className="mx-auto max-w-xl2 w-10/12 object-cover"
         >
-          <source src="wakket_v1/hls-wakket_v1.mp4" type="video/mp4" />
+          <source src="wakket_v2/mp4-wakket_v1.mp4" type="video/mp4" />
 
           <source
             type="video/webm"
